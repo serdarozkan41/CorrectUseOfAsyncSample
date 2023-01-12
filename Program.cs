@@ -13,7 +13,10 @@ var otherSite4 = httpClient.GetStringAsync("https://www.bing.com.tr");
 
 //other works........
 
-Console.WriteLine($"{await otherSite3}");
-Console.WriteLine($"{await otherSite4}");
+await otherSite3;
+await otherSite4;
+
+Console.WriteLine($"{otherSite3.Result}");
+Console.WriteLine($"{otherSite4.Result}");
 
 Console.ReadLine();
